@@ -1,0 +1,23 @@
+{
+  "name": "jest-mock",
+  "version": "1.0.0",
+  "description": "A demo for jest mock in different scenes",
+  "main": "index.js",
+  "author": "Qinyun Wang",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
