@@ -39,5 +39,16 @@ describe('mock function', () => {
     expect(mockOperation.mock.instances.length).toBe(2);
   })
 
-  
+  it('should mock return value', () => {
+    const mockFilter = jest.fn()
+
+    // add name here to replace 'jest.fn()'
+    mockFilter.mockName('filter')
+    mockFilter.mockReturnValueOnce(true).mockReturnValueOnce(false)
+
+    const result = ['Keep value', 'Filter value'].filter(value => mockFilter(value))
+
+    expect(mockFilter).toHaveBeenCalledTimes(2)
+    expect(result).toEqual(['Keep value'])
+  })
 })
