@@ -1,7 +1,7 @@
 import { forEach, calculate, userProfile } from '../index'
 import { getUserEmail } from '../module'
 
-jest.mock('./module')
+jest.mock('../module')
 
 describe('mock function', () => {
   it('should call mock function', () => {

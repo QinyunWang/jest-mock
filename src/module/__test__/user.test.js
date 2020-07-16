@@ -14,7 +14,7 @@ describe("register", () => {
     verifyUsername.mockReturnValue("admin");
     verifyPassword.mockReturnValue(false);
     await expect(register()).rejects.toEqual(
-      Error("wrong username or password")
+      Error("Invalid username or password")
     );
   });
 });

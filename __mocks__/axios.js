@@ -1,6 +1,6 @@
 // use jest.genMockFromModule to generate an automatic mock, 
 // and overrides its default behavior.
-const axios = jest.genMockFromModule("axios");
+const axios = jest.genMockFromModule('axios');
 
 function get() {
   return Promise.resolve({ data: "Alex" });
