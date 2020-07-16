@@ -3,11 +3,11 @@
 const axios = jest.genMockFromModule('axios');
 
 function get() {
-  return Promise.resolve({ data: "Alex" });
+  // Implementation
 }
 
 function post() {
-  return Promise.resolve({ data: "CREATED" });
+  // Implementation
 }
 
 axios.get = get;
