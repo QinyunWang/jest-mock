@@ -1,5 +1,5 @@
-import { forEach, calculate, userProfile } from './index'
-import { getUserEmail } from './module'
+import { forEach, calculate, userProfile } from '../index'
+import { getUserEmail } from '../module'
 
 jest.mock('./module')
 

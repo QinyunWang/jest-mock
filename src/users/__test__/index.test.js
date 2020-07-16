@@ -1,4 +1,4 @@
-import getUser from './index'
+import getUser from '../index'
 
 describe('mock function', () => {
   it('should return user info', async () => {
