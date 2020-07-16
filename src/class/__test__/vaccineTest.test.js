@@ -17,7 +17,6 @@ beforeEach(() => {
 
 describe("inject", () => {
   test("should recipient accept injection with vaccine", () => {
-    // TODO 14: add test here
     expect.assertions(1);
 
     const vaccineTest = new VaccineTest();
@@ -29,7 +28,6 @@ describe("inject", () => {
 
 describe("test", () => {
   test("should get Success if recipient has antibodies", () => {
-    // TODO 15: add test here
     expect.assertions(2);
 
     const vaccineTest = new VaccineTest();
