@@ -1,4 +1,7 @@
-import { forEach, calculate } from './index'
+import { forEach, calculate, userProfile } from './index'
+import { getUserEmail } from './module'
+
+jest.mock('./module')
 
 describe('mock function', () => {
   it('should call mock function', () => {
@@ -50,5 +53,12 @@ describe('mock function', () => {
 
     expect(mockFilter).toHaveBeenCalledTimes(2)
     expect(result).toEqual(['Keep value'])
+  })
+
+  it('should return user profile', () => {
+    getUserEmail.mockReturnValue('mockUser@thoughtworks.com')
+    const result = userProfile('Donald')
+
+    expect(result).toEqual({name: 'Donald', email: 'mockUser@thoughtworks.com'})
   })
 })
