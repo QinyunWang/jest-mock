@@ -38,7 +38,6 @@ describe("test", () => {
   });
 
   test("should get Failed if recipient has no antibodies", () => {
-    // TODO 16: add test here
     expect.assertions(2);
 
     const vaccineTest = new VaccineTest();
